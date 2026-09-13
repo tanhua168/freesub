@@ -11,18 +11,7 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: 22f60053-tlheo0-tzxeoy-hns7.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  servername: updates.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 03 (家宽) - xiaohe
+- name: 🇷🇴 罗马尼亚 (Romania) 02 (家宽) - xiaohe
   server: roma2.moritech.net
   port: 443
   udp: true
@@ -32,22 +21,50 @@ proxies:
   tls: true
   servername: roma2.moritech.net
   skip-cert-verify: false
-  client-fingerprint: edge
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  server: 213.21.229.126
+  port: 12345
+  udp: true
+  type: vless
+  uuid: 8e80fe77-270e-4ac2-8f57-95761072d1a2
+  tls: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
+  server: 118.167.209.5
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 03 (家宽) - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇷🇴 罗马尼亚 (Romania) 03 (家宽) - xiaohe
+  - 🇷🇴 罗马尼亚 (Romania) 02 (家宽) - xiaohe
+  - 🇯🇵 日本 (Japan) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
