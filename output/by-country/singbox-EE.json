@@ -10,11 +10,7 @@
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "estproxy4.lockdwn.com"
-        }
+        "type": "ws"
       }
     },
     {
@@ -26,11 +22,7 @@
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
     },
     {
@@ -42,7 +34,7 @@
       "tls": {
         "enabled": true,
         "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": false
+        "insecure": true
       }
     },
     {
