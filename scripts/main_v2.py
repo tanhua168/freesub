@@ -53,6 +53,10 @@ except ImportError as e:
 # ══════════════════════════════════════════════════════════════════
 
 SOURCE_URLS = [
+    "https://20251017.tanhua2025.workers.dev/077ee728-5204-4707-8248-4f61274f0b59?sub",
+    "https://26.qswhzxh.dpdns.org/sub/normal/532feaef-9fff-45ed-92e5-ca30c7b049c1?app=xray#%F0%9F%92%A6%20BPB%20Normal",
+    "https://20260904-5v7.pages.dev/0257f8a7-fc0f-4655-9595-96d5f20c1506/sub",
+    "https://qifei.tanhua20264.ccwu.cc/cm?sub",
     "https://wild-cloud-9893.heleimail.workers.dev",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",
     "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",
