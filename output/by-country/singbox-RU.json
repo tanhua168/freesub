@@ -30,36 +30,21 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - qinghuaci",
-      "server": "46.8.200.91",
-      "server_port": 443,
-      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
       "tls": {
         "enabled": true,
-        "server_name": "cf3.rumedia-cdn.com",
-        "insecure": false,
+        "server_name": "ya.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/casc",
-        "headers": {
-          "Host": "cf3.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - qinghuaci",
-      "server": "srv-17e124.21freedom.net",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "off",
-        "insecure": true
       }
     },
     {
@@ -69,8 +54,7 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - qinghuaci",
         "🇷🇺 俄罗斯 (Russia) 02 - qinghuaci",
-        "🇷🇺 俄罗斯 (Russia) 03 - qinghuaci",
-        "🇷🇺 俄罗斯 (Russia) 04 - qinghuaci"
+        "🇷🇺 俄罗斯 (Russia) 03 - qinghuaci"
       ]
     },
     {
@@ -79,8 +63,7 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - qinghuaci",
         "🇷🇺 俄罗斯 (Russia) 02 - qinghuaci",
-        "🇷🇺 俄罗斯 (Russia) 03 - qinghuaci",
-        "🇷🇺 俄罗斯 (Russia) 04 - qinghuaci"
+        "🇷🇺 俄罗斯 (Russia) 03 - qinghuaci"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
