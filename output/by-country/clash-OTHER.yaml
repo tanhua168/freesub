@@ -4,29 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - qinghuaci
-  server: shop.neexbyte.ir
+- name: 🌐 其他地区 (Other) 01 - qinghuaci
+  server: 104.21.91.53
   port: 8443
   udp: true
-  type: vless
-  uuid: 464bc502-f963-45b6-81e3-e33d18427506
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: shop.neexbyte.ir
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - qinghuaci
+  - 🌐 其他地区 (Other) 01 - qinghuaci
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - qinghuaci
+  - 🌐 其他地区 (Other) 01 - qinghuaci
 rules:
 - MATCH,PROXIES

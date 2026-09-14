@@ -4,18 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - qinghuaci",
-      "server": "192.145.31.5",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 01 - qinghuaci",
+      "server": "104.21.91.53",
       "server_port": 8443,
-      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "neth9.lunariai.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },
@@ -24,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - qinghuaci"
+        "🌐 其他地区 (Other) 01 - qinghuaci"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - qinghuaci"
+        "🌐 其他地区 (Other) 01 - qinghuaci"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
