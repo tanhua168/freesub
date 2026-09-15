@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - qinghuaci
-  server: 104.16.72.41
-  port: 443
+- name: 🇮🇶 IQ 01 - qinghuaci
+  server: 104.21.70.21
+  port: 8080
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
   network: ws
   ws-opts:
-    path: /assignment
+    path: /rN50nmm9L1DeY73C?ed=2560
+    headers:
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - qinghuaci
+  - 🇮🇶 IQ 01 - qinghuaci
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - qinghuaci
+  - 🇮🇶 IQ 01 - qinghuaci
 rules:
 - MATCH,PROXIES
