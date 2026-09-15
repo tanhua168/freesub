@@ -6,162 +6,6 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 01 - qinghuaci",
-      "server": "13.39.182.161",
-      "server_port": 22223,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 02 - qinghuaci",
-      "server": "13.37.25.107",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 03 - qinghuaci",
-      "server": "13.37.25.107",
-      "server_port": 22223,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 04 - qinghuaci",
-      "server": "13.39.182.161",
-      "server_port": 22222,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 05 - qinghuaci",
-      "server": "15.237.218.241",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 06 - qinghuaci",
-      "server": "13.37.25.107",
-      "server_port": 22224,
-      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 07 - qinghuaci",
-      "server": "45.144.28.39",
-      "server_port": 2083,
-      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
-      "tls": {
-        "enabled": true,
-        "server_name": "usejh2.neobo-tooth.ru",
-        "insecure": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 08 - qinghuaci",
-      "server": "45.144.28.39",
-      "server_port": 2096,
-      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "usejh2.neobo-tooth.ru"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 09 - qinghuaci",
-      "server": "151.247.197.253",
-      "server_port": 36723,
-      "password": "Krab9Hyst2_Rk7pQ2xL",
-      "tls": {
-        "enabled": true,
-        "server_name": "151.247.197.253",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 10 - qinghuaci",
-      "server": "51.83.192.80",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 11 - qinghuaci",
-      "server": "51.77.217.70",
-      "server_port": 2053,
-      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
-          "short_id": "bfe58beb41f1d09f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 12 - qinghuaci",
-      "server": "62.210.91.2",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 13 - qinghuaci",
-      "server": "104.18.8.83",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false,
-        "alpn": [
-          "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 14 - qinghuaci",
       "server": "62.210.91.10",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -181,40 +25,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 15 - qinghuaci",
-      "server": "162.19.10.99",
-      "server_port": 443,
-      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 16 - qinghuaci",
-      "server": "35.181.166.40",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "35.181.166.40",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 02 - qinghuaci",
+      "server": "51.83.192.80",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "itzvpn@321"
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 17 - qinghuaci",
+      "tag": "🇫🇷 法国 (France) 03 - qinghuaci",
       "server": "54.37.136.194",
       "server_port": 2053,
       "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
@@ -223,7 +43,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -233,8 +53,151 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 04 - qinghuaci",
+      "server": "104.16.72.41",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 18 - qinghuaci",
+      "tag": "🇫🇷 法国 (France) 05 - qinghuaci",
+      "server": "45.144.28.39",
+      "server_port": 2096,
+      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "usejh2.neobo-tooth.ru"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 06 - qinghuaci",
+      "server": "62.210.91.2",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 07 - qinghuaci",
+      "server": "162.19.10.99",
+      "server_port": 443,
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 08 - qinghuaci",
+      "server": "51.77.217.70",
+      "server_port": 2053,
+      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
+          "short_id": "bfe58beb41f1d09f"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 09 - qinghuaci",
+      "server": "35.181.166.40",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-fr-002.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 10 - qinghuaci",
+      "server": "45.144.28.39",
+      "server_port": 2083,
+      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
+      "tls": {
+        "enabled": true,
+        "server_name": "usejh2.neobo-tooth.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 11 - qinghuaci",
+      "server": "151.247.197.253",
+      "server_port": 36723,
+      "password": "Krab9Hyst2_Rk7pQ2xL",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 12 - qinghuaci",
+      "server": "vpn-fr-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-fr-002.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 13 - qinghuaci",
       "server": "51.38.82.1",
       "server_port": 443,
       "uuid": "9343f183-7a16-4bdd-9c65-b0c21feca40b",
@@ -243,7 +206,7 @@
         "server_name": "play.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -253,8 +216,31 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 14 - qinghuaci",
+      "server": "185.114.72.31",
+      "server_port": 2053,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 19 - qinghuaci",
+      "tag": "🇫🇷 法国 (France) 15 - qinghuaci",
       "server": "62.210.7.139",
       "server_port": 60111,
       "password": "github.com/Alvin9999-newpac/fanqiang",
@@ -265,33 +251,33 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 20 - qinghuaci",
-      "server": "13.38.76.125",
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 16 - qinghuaci",
+      "server": "173.212.201.85",
       "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 21 - qinghuaci",
-      "server": "88.216.69.144",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-4d64f1370eeb",
+      "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "r5zenrelur2s.pqzdileiu8es.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
+        "server_name": "173.212.201.85",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 17 - qinghuaci",
+      "server": "185.220.100.168",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/stream/PANEL_ZEUS/4d64f1370eeb/loc-0",
+        "path": "/assignment",
         "headers": {
-          "Host": "r5zenrelur2s.pqzdileiu8es.workers.dev"
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -316,11 +302,7 @@
         "🇫🇷 法国 (France) 14 - qinghuaci",
         "🇫🇷 法国 (France) 15 - qinghuaci",
         "🇫🇷 法国 (France) 16 - qinghuaci",
-        "🇫🇷 法国 (France) 17 - qinghuaci",
-        "🇫🇷 法国 (France) 18 - qinghuaci",
-        "🇫🇷 法国 (France) 19 - qinghuaci",
-        "🇫🇷 法国 (France) 20 - qinghuaci",
-        "🇫🇷 法国 (France) 21 - qinghuaci"
+        "🇫🇷 法国 (France) 17 - qinghuaci"
       ]
     },
     {
@@ -343,11 +325,7 @@
         "🇫🇷 法国 (France) 14 - qinghuaci",
         "🇫🇷 法国 (France) 15 - qinghuaci",
         "🇫🇷 法国 (France) 16 - qinghuaci",
-        "🇫🇷 法国 (France) 17 - qinghuaci",
-        "🇫🇷 法国 (France) 18 - qinghuaci",
-        "🇫🇷 法国 (France) 19 - qinghuaci",
-        "🇫🇷 法国 (France) 20 - qinghuaci",
-        "🇫🇷 法国 (France) 21 - qinghuaci"
+        "🇫🇷 法国 (France) 17 - qinghuaci"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

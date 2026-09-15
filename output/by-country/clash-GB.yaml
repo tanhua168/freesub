@@ -5,100 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - qinghuaci
-  server: www.speedtest.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: 513beae3-56e7-4954-a17e-930e06237b27
-  tls: true
-  servername: CfOI-2FX16g3-8rY2kdXmCJ.WJeSv2ILA3rXbUhpC2NSugRAchGaWK.WOrkeRs.DEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/3wSAeuGJbrGHwJ45DA6ircvHC6?ed=2560
-    headers:
-      Host: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 02 - qinghuaci
-  server: 162.159.152.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  tls: true
-  servername: rayan-007.maxima.dpdns.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🇬🇧 英国 (United Kingdom) 03 - qinghuaci
-  server: 172.64.153.235
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
-  tls: true
-  servername: socks5.revil-time3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /socks5://128.140.46.169:13482
-    headers:
-      Host: socks5.revil-time3.workers.dev
-- name: 🇬🇧 英国 (United Kingdom) 04 - qinghuaci
-  server: 158.173.24.73
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 05 - qinghuaci
-  server: 149.102.132.184
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 06 - qinghuaci
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 07 - qinghuaci
-  server: 149.102.149.207
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 08 - qinghuaci
-  server: 149.102.149.207
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 09 - qinghuaci
-  server: 129.151.69.214
-  port: 61312
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 5Mugk0D+By809yuKRT7iJbLeu37gwDKouQWai+3oCYk=
-- name: 🇬🇧 英国 (United Kingdom) 10 - qinghuaci
-  server: 149.102.132.184
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 11 - qinghuaci
   server: 66.90.105.210
   port: 2083
   udp: true
@@ -107,115 +13,54 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 12 - qinghuaci
-  server: 66.90.104.42
-  port: 2083
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 13 - qinghuaci
-  server: 78.129.208.44
-  port: 421
-  udp: true
-  type: vless
-  uuid: a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
-    short-id: a1facbc8575701ae
-  servername: chistomat.dry.care
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 14 - qinghuaci
-  server: 87.117.234.19
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
-    short-id: fd55b698ee8c3629
-  servername: strapi.io
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 15 - qinghuaci
-  server: 51.89.194.151
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1fd1b8b1-5080-43c6-8564-b825cd783f06
-  tls: true
-  reality-opts:
-    public-key: Erxh845BlP6uy97CL7ferXX3IsEQ-my7EOLI2mZMBHM
-    short-id: b3f7e7bbf581f6fc
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 16 - qinghuaci
-  server: 13.40.130.216
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-uk-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 17 - qinghuaci
-  server: vpn-uk-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-uk-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇬🇧 英国 (United Kingdom) 18 - qinghuaci
-  server: 51.38.70.192
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
-  tls: true
-  reality-opts:
-    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
-    short-id: 98fa0b00d09419f7
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 19 - qinghuaci
-  server: 144.31.243.2
-  port: 16015
+- name: 🇬🇧 英国 (United Kingdom) 02 - qinghuaci
+  server: 158.173.221.214
+  port: 11001
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: J1InuU6QRT5JOh1mQfkjU2
-- name: 🇬🇧 英国 (United Kingdom) 20 - qinghuaci
-  server: 57.129.132.223
+  password: c58d16e593d44f42
+- name: 🇬🇧 英国 (United Kingdom) 03 - qinghuaci
+  server: 149.102.149.207
   port: 80
   udp: true
-  type: vmess
-  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 21 - qinghuaci
-  server: 138.124.125.211
+  type: ss
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: 🇬🇧 英国 (United Kingdom) 04 - qinghuaci
+  server: 149.102.149.207
   port: 443
   udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: 🇬🇧 英国 (United Kingdom) 05 - qinghuaci
+  server: 149.102.132.184
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+- name: 🇬🇧 英国 (United Kingdom) 06 - qinghuaci
+  server: 158.173.24.73
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 07 - qinghuaci
+  server: 46.250.250.149
+  port: 2053
+  udp: true
   type: vless
-  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
-  flow: xtls-rprx-vision
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
   tls: true
   reality-opts:
-    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
-    short-id: 72cceb78
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 22 - qinghuaci
+- name: 🇬🇧 英国 (United Kingdom) 08 - qinghuaci
   server: 95.154.196.61
   port: 443
   udp: true
@@ -227,23 +72,63 @@ proxies:
     public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
     short-id: e4a1b53b03eff60d
   servername: strapi.io
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 23 - qinghuaci
-  server: 129.121.95.159
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 09 - qinghuaci
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 10 - qinghuaci
+  server: 149.102.132.184
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+- name: 🇬🇧 英国 (United Kingdom) 11 - qinghuaci
+  server: 78.129.208.44
+  port: 421
+  udp: true
+  type: vless
+  uuid: a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
+    short-id: a1facbc8575701ae
+  servername: chistomat.dry.care
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 12 - qinghuaci
+  server: 87.117.234.19
   port: 443
   udp: true
   type: vless
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+  uuid: 4d583b2c-2f5a-47d0-8181-e95217fe8cd9
+  flow: xtls-rprx-vision
   tls: true
-  servername: 129.121.95.159
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: 129.121.95.159
-- name: 🇬🇧 英国 (United Kingdom) 24 - qinghuaci
+  reality-opts:
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  servername: strapi.io
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 13 - qinghuaci
+  server: 146.70.61.18
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 14 - qinghuaci
+  server: vpn-uk-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-uk-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 15 - qinghuaci
   server: 46.33.8.20
   port: 443
   udp: true
@@ -256,37 +141,60 @@ proxies:
     short-id: a61d99e920140145
   servername: filesconvert.org
   client-fingerprint: qq
-- name: 🇬🇧 英国 (United Kingdom) 25 - qinghuaci
+- name: 🇬🇧 英国 (United Kingdom) 16 - qinghuaci
+  server: 144.31.243.2
+  port: 16015
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: J1InuU6QRT5JOh1mQfkjU2
+- name: 🇬🇧 英国 (United Kingdom) 17 - qinghuaci
+  server: 138.124.125.211
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
+    short-id: 72cceb78
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 18 - qinghuaci
+  server: 5.152.223.97
+  port: 443
+  udp: true
+  type: vless
+  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
+    short-id: 1aa9f3c9021280c0
+  servername: strapi.io
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 19 - qinghuaci
+  server: 31.76.7.154
+  port: 7443
+  udp: true
+  type: vless
+  uuid: d7cad038-0c3f-4cce-8f8a-36464aaf66c0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: d2061bb1
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 20 - qinghuaci
   server: 94.156.250.148
   port: 7001
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: RexnBgU7EV5ADxG
-- name: 🇬🇧 英国 (United Kingdom) 26 - qinghuaci
-  server: 2.27.205.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: c21631d5-36c9-4664-b575-97eca17456be
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: neth8.lunariai.ru
-- name: 🇬🇧 英国 (United Kingdom) 27 - qinghuaci
-  server: 46.250.250.149
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-  tls: true
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 28 - qinghuaci
+- name: 🇬🇧 英国 (United Kingdom) 21 - qinghuaci
   server: 31.76.88.10
   port: 443
   udp: true
@@ -301,22 +209,20 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf5.rumedia-cdn.com
-- name: 🇬🇧 英国 (United Kingdom) 29 - qinghuaci
-  server: 66.163.117.58
-  port: 22324
+- name: 🇬🇧 英国 (United Kingdom) 22 - qinghuaci
+  server: 95.85.224.51
+  port: 443
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇬🇧 英国 (United Kingdom) 30 - qinghuaci
-  server: 158.173.221.214
-  port: 11001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: c58d16e593d44f42
-- name: 🇬🇧 英国 (United Kingdom) 31 - qinghuaci
+  type: vless
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: max.ru
+  client-fingerprint: qq
+- name: 🇬🇧 英国 (United Kingdom) 23 - qinghuaci
   server: 193.163.203.170
   port: 443
   udp: true
@@ -329,17 +235,77 @@ proxies:
     short-id: b28db60d77c50b4f
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 32 - qinghuaci
-  server: 91.186.216.100
-  port: 7005
+- name: 🇬🇧 英国 (United Kingdom) 24 - qinghuaci
+  server: 107.181.151.39
+  port: 443
   udp: true
   type: vless
-  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
+  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
-  servername: play.googleapis.com
-  client-fingerprint: ios
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 73a9e631a09b
+  servername: www.microsoft.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 25 - qinghuaci
+  server: 87.239.249.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
+    short-id: 91af08b1ce1f
+  servername: www.foxsports.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 26 - qinghuaci
+  server: staging.lastilhame.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: 594d466e-8ac3-4fda-b1d1-eeb817853518
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: 5a018643df03
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 27 - qinghuaci
+  server: 129.121.95.159
+  port: 443
+  udp: true
+  type: vless
+  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
+  tls: true
+  servername: 129.121.95.159
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /connect
+    headers:
+      Host: 129.121.95.159
+- name: 🇬🇧 英国 (United Kingdom) 28 - qinghuaci
+  server: 66.163.117.58
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇬🇧 英国 (United Kingdom) 29 - qinghuaci
+  server: 66.90.104.42
+  port: 2083
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -374,9 +340,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 27 - qinghuaci
   - 🇬🇧 英国 (United Kingdom) 28 - qinghuaci
   - 🇬🇧 英国 (United Kingdom) 29 - qinghuaci
-  - 🇬🇧 英国 (United Kingdom) 30 - qinghuaci
-  - 🇬🇧 英国 (United Kingdom) 31 - qinghuaci
-  - 🇬🇧 英国 (United Kingdom) 32 - qinghuaci
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -411,8 +374,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 27 - qinghuaci
   - 🇬🇧 英国 (United Kingdom) 28 - qinghuaci
   - 🇬🇧 英国 (United Kingdom) 29 - qinghuaci
-  - 🇬🇧 英国 (United Kingdom) 30 - qinghuaci
-  - 🇬🇧 英国 (United Kingdom) 31 - qinghuaci
-  - 🇬🇧 英国 (United Kingdom) 32 - qinghuaci
 rules:
 - MATCH,PROXIES
