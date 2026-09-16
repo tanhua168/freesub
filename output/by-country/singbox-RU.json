@@ -4,16 +4,50 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - qinghuaci",
-      "server": "195.133.23.200",
-      "server_port": 7018,
+      "server": "172.64.52.6",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - qinghuaci",
+      "server": "194.87.196.13",
+      "server_port": 9011,
       "method": "aes-256-gcm",
-      "password": "81a20429165df87e"
+      "password": "4938e975724d0ed1"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - qinghuaci",
+      "server": "195.58.48.137",
+      "server_port": 9019,
+      "method": "aes-256-gcm",
+      "password": "8ad9d72a5571df86"
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - qinghuaci",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - qinghuaci",
+      "server": "91.196.32.163",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "germany3.h2corp.local",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - qinghuaci",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
@@ -25,7 +59,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - qinghuaci",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - qinghuaci",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -36,8 +70,40 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - qinghuaci",
+      "server": "ru.xiaoliyu.cyou",
+      "server_port": 4433,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru.xiaoliyu.cyou",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - qinghuaci",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - qinghuaci",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - qinghuaci",
       "server": "46.8.200.91",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
@@ -59,30 +125,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - qinghuaci",
-      "server": "193.17.92.57",
-      "server_port": 2053,
-      "uuid": "1cbb3702-b434-45cf-8520-3e32d860fd83",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "G7VlRXdpKKaZ_33pA0Zsii70uiYkeoBiVYgAD_tL_28",
-          "short_id": "76f9d74c385ae618"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-fd03cd54"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -91,7 +133,11 @@
         "🇷🇺 俄罗斯 (Russia) 02 - qinghuaci",
         "🇷🇺 俄罗斯 (Russia) 03 - qinghuaci",
         "🇷🇺 俄罗斯 (Russia) 04 - qinghuaci",
-        "🇷🇺 俄罗斯 (Russia) 05 - qinghuaci"
+        "🇷🇺 俄罗斯 (Russia) 05 - qinghuaci",
+        "🇷🇺 俄罗斯 (Russia) 06 - qinghuaci",
+        "🇷🇺 俄罗斯 (Russia) 07 - qinghuaci",
+        "🇷🇺 俄罗斯 (Russia) 08 - qinghuaci",
+        "🇷🇺 俄罗斯 (Russia) 09 - qinghuaci"
       ]
     },
     {
@@ -102,7 +148,11 @@
         "🇷🇺 俄罗斯 (Russia) 02 - qinghuaci",
         "🇷🇺 俄罗斯 (Russia) 03 - qinghuaci",
         "🇷🇺 俄罗斯 (Russia) 04 - qinghuaci",
-        "🇷🇺 俄罗斯 (Russia) 05 - qinghuaci"
+        "🇷🇺 俄罗斯 (Russia) 05 - qinghuaci",
+        "🇷🇺 俄罗斯 (Russia) 06 - qinghuaci",
+        "🇷🇺 俄罗斯 (Russia) 07 - qinghuaci",
+        "🇷🇺 俄罗斯 (Russia) 08 - qinghuaci",
+        "🇷🇺 俄罗斯 (Russia) 09 - qinghuaci"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
