@@ -4,21 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - qinghuaci",
-      "server": "104.16.71.213",
+      "type": "vless",
+      "tag": "🇨🇳 CN 01 - qinghuaci",
+      "server": "101.96.234.244",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
+        "server_name": "kkkk-8oc.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/?ed=2048",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "kkkk-8oc.pages.dev"
         }
       }
     },
@@ -27,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - qinghuaci"
+        "🇨🇳 CN 01 - qinghuaci"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - qinghuaci"
+        "🇨🇳 CN 01 - qinghuaci"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,14 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - qinghuaci
+  server: hk-1.gsafevpnapi.com
+  port: 20270
+  udp: true
+  type: vless
+  uuid: c80d9d87-0aa6-4b45-9673-7a9d1e5e4d6b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - qinghuaci
   server: 46.17.42.166
   port: 50111
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 6b39ae3234dfd68b
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - qinghuaci
-  server: 162.128.157.164
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - qinghuaci
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - qinghuaci
+  server: vj37-1936vtw.fincore.top
   port: 443
   udp: true
   type: vless
@@ -23,21 +44,8 @@ proxies:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   servername: www.bing.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - qinghuaci
-  server: hk-1.gsafevpnapi.com
-  port: 20270
-  udp: true
-  type: vless
-  uuid: fee2c73a-d527-4b3f-9d48-0631168d83e8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - qinghuaci
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - qinghuaci
   server: 34.92.123.152
   port: 443
   udp: true
@@ -50,15 +58,46 @@ proxies:
     short-id: 56c35a22730a22e5
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - qinghuaci
-  server: 202.146.222.174
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - qinghuaci
+  server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  sni: https://t.me/wangcai2рҹүёрҹүі
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - qinghuaci
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - qinghuaci
+  server: 47.240.80.220
+  port: 2052
+  udp: true
+  type: trojan
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  sni: vpn.12169.top
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - qinghuaci
+  server: 45.202.247.198
+  port: 443
+  udp: true
+  type: vless
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  tls: true
+  servername: kkkk-8oc.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: kkkk-8oc.pages.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - qinghuaci
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vk.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - qinghuaci
   server: 119.246.1.143
   port: 443
   udp: true
@@ -66,68 +105,29 @@ proxies:
   password: BxceQaOe
   sni: t.me
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - qinghuaci
-  server: 8.218.184.4
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - qinghuaci
+  server: www.wto.org
   port: 443
   udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
   tls: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  servername: hk.152568.xyz
   skip-cert-verify: false
+  client-fingerprint: edge
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /cdn/packages/runtime-core.tar.gz
     headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - qinghuaci
-  server: www.shopify.com
-  port: 443
+      Host: hk.152568.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - qinghuaci
+  server: els1.mangshe.xyz
+  port: 2056
   udp: true
-  type: vmess
-  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: yoga-suggesting-recording-calls.trycloudflare.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
-    headers:
-      Host: yoga-suggesting-recording-calls.trycloudflare.com
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - qinghuaci
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - qinghuaci
-  server: 47.86.107.119
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: 127.0.0.1
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -143,6 +143,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - qinghuaci
   - 🇭🇰 中国香港 (Hong Kong) 09 - qinghuaci
   - 🇭🇰 中国香港 (Hong Kong) 10 - qinghuaci
+  - 🇭🇰 中国香港 (Hong Kong) 11 - qinghuaci
+  - 🇭🇰 中国香港 (Hong Kong) 12 - qinghuaci
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -158,5 +160,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - qinghuaci
   - 🇭🇰 中国香港 (Hong Kong) 09 - qinghuaci
   - 🇭🇰 中国香港 (Hong Kong) 10 - qinghuaci
+  - 🇭🇰 中国香港 (Hong Kong) 11 - qinghuaci
+  - 🇭🇰 中国香港 (Hong Kong) 12 - qinghuaci
 rules:
 - MATCH,PROXIES
