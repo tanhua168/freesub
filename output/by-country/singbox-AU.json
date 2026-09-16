@@ -30,7 +30,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "whatsapp.com",
+        "server_name": "css.rbxcdn.com",
         "insecure": true
       }
     },
@@ -39,14 +39,14 @@
       "tag": "🇦🇺 澳大利亚 (Australia) 04 - qinghuaci",
       "server": "au1.gsafevpnapi.com",
       "server_port": 20270,
-      "uuid": "8da6f662-e36b-4eff-99f9-43a842911707",
+      "uuid": "f0eb9f67-ef76-40aa-a1e6-22a11d5a9379",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
