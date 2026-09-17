@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - qinghuaci
-  server: srv-21bac9.vless.monster
+  server: 31.56.189.27
   port: 2087
   udp: true
   type: vless
@@ -13,6 +13,7 @@ proxies:
   tls: true
   servername: srv-21bac9.vless.monster
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
@@ -49,17 +50,6 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - qinghuaci
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - qinghuaci
   server: 31.58.181.88
   port: 8443
   udp: true
@@ -71,6 +61,27 @@ proxies:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 06 - qinghuaci
+  server: 188.208.110.238
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0c597b0d-99d7-4c27-befe-6c5d339d7dbe
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
+  servername: baeb.edge-static.space
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 07 - qinghuaci
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,6 +93,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - qinghuaci
   - 🇦🇪 阿联酋 (UAE) 05 - qinghuaci
   - 🇦🇪 阿联酋 (UAE) 06 - qinghuaci
+  - 🇦🇪 阿联酋 (UAE) 07 - qinghuaci
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,5 +105,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - qinghuaci
   - 🇦🇪 阿联酋 (UAE) 05 - qinghuaci
   - 🇦🇪 阿联酋 (UAE) 06 - qinghuaci
+  - 🇦🇪 阿联酋 (UAE) 07 - qinghuaci
 rules:
 - MATCH,PROXIES
