@@ -5,21 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - qinghuaci",
-      "server": "178.236.16.98",
-      "server_port": 35728,
-      "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 (家宽) - qinghuaci",
+      "server": "162.159.153.4",
+      "server_port": 443,
+      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "rAyAn-007.mAxImA.DpDnS.OrG",
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
-          "short_id": "69a2"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "rAyAn-007.mAxImA.DpDnS.OrG"
         }
       }
     },
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - qinghuaci"
+        "🇬🇧 英国 (United Kingdom) 01 (家宽) - qinghuaci"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - qinghuaci"
+        "🇬🇧 英国 (United Kingdom) 01 (家宽) - qinghuaci"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
