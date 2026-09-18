@@ -5,16 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - qinghuaci
-  server: 104.16.72.41
+  server: 104.18.32.252
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  type: vless
+  uuid: 6dd13cd4-e378-4742-bef1-d8ac54083626
+  tls: true
+  servername: eb9a7750.69lover.site
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /assignment
+    path: /api/v2/4ecb1e0e26887759/stream
+    headers:
+      Host: eb9a7750.69lover.site
 proxy-groups:
 - name: PROXIES
   type: select

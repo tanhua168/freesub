@@ -4,21 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - qinghuaci",
-      "server": "104.16.72.41",
+      "server": "104.18.32.252",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "6dd13cd4-e378-4742-bef1-d8ac54083626",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
+        "server_name": "eb9a7750.69lover.site",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/api/v2/4ecb1e0e26887759/stream",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "eb9a7750.69lover.site"
         }
       }
     },

@@ -4,23 +4,43 @@
   },
   "outbounds": [
     {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - qinghuaci",
+      "server": "7dba81fc3a0b.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "7dba81fc3a0b.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "7dba81fc3a0b.oylfmxz.cn"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - qinghuaci",
-      "server": "hg.zhujue.us",
-      "server_port": 11000,
-      "uuid": "0e46345c-f33b-4f9b-b8ec-90e7c986af7e",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) - qinghuaci",
+      "server": "tic-5.serbia-maki.stream",
+      "server_port": 8443,
+      "uuid": "e78c9b0e-2e52-3ca8-bae2-ed04d8894f61",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "s0.awsstatic.com",
+        "server_name": "is1-ssl.mzstatic.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4",
-          "short_id": ""
+          "public_key": "eS4gz2nWkErpiOaeRnumjNKdmVDG1Vor8ToY79J20Gg",
+          "short_id": "bcdbf4c73ce16565"
         }
       }
     },
@@ -29,14 +49,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - qinghuaci"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - qinghuaci",
+        "🇺🇸 美国 (United States) 02 (家宽) - qinghuaci"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - qinghuaci"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - qinghuaci",
+        "🇺🇸 美国 (United States) 02 (家宽) - qinghuaci"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

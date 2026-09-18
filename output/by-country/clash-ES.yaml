@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - qinghuaci
-  server: 140.174.184.5
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 02 - qinghuaci
-  server: 108.181.121.226
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 03 - qinghuaci
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -36,15 +22,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01 - qinghuaci
-  - 🇪🇸 西班牙 (Spain) 02 - qinghuaci
-  - 🇪🇸 西班牙 (Spain) 03 - qinghuaci
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇸 西班牙 (Spain) 01 - qinghuaci
-  - 🇪🇸 西班牙 (Spain) 02 - qinghuaci
-  - 🇪🇸 西班牙 (Spain) 03 - qinghuaci
 rules:
 - MATCH,PROXIES
