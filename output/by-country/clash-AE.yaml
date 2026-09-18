@@ -39,7 +39,7 @@ proxies:
   servername: tradingview.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 04 - qinghuaci
-  server: 85.204.107.171
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2

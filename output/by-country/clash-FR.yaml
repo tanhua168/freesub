@@ -11,32 +11,43 @@ proxies:
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
 - name: 🇫🇷 法国 (France) 02 - qinghuaci
-  server: 104.21.94.230
-  port: 443
+  server: 62.210.124.146
+  port: 22000
+  udp: true
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 03 - qinghuaci
+  server: 62.210.91.10
+  port: 23576
   udp: true
   type: vless
-  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
   tls: true
-  servername: FroSTy-PonD-7436.SHHabbYAt914.woRkErS.dEv
-  skip-cert-verify: false
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /NmrU9ImDG7jA7oFEem
-    headers:
-      Host: frosty-pond-7436.shhabbyat914.workers.dev
-- name: 🇫🇷 法国 (France) 03 - qinghuaci
-  server: 45.205.0.6
+- name: 🇫🇷 法国 (France) 04 - qinghuaci
+  server: 151.247.197.253
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: www.cloudflare.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 05 - qinghuaci
+  server: 35.181.166.40
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 04 - qinghuaci
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 06 - qinghuaci
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -49,21 +60,6 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 05 - qinghuaci
-  server: 62.210.124.146
-  port: 22000
-  udp: true
-  type: hysteria2
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 06 - qinghuaci
-  server: 15.237.137.134
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇫🇷 法国 (France) 07 - qinghuaci
   server: 51.255.13.232
   port: 8388
@@ -72,35 +68,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: BqnqToih0PbU
 - name: 🇫🇷 法国 (France) 08 - qinghuaci
-  server: 62.210.91.10
-  port: 23576
-  udp: true
-  type: vless
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-  client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 09 - qinghuaci
-  server: 35.181.166.40
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 35.181.166.40
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 10 - qinghuaci
-  server: 151.247.197.253
-  port: 36723
-  udp: true
-  type: hysteria2
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: 151.247.197.253
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 11 - qinghuaci
   server: 162.19.10.99
   port: 443
   udp: true
@@ -111,40 +78,9 @@ proxies:
   servername: nasnet-162191099-direct.mbghalibaf.com
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 12 - qinghuaci
-  server: 199.232.78.170
+- name: 🇫🇷 法国 (France) 09 - qinghuaci
+  server: 188.114.96.3
   port: 443
-  udp: true
-  type: vless
-  uuid: XpnTeam-1
-  tls: true
-  servername: ssl.fastly.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-- name: 🇫🇷 法国 (France) 13 - qinghuaci
-  server: 62.210.147.2
-  port: 43115
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 14 - qinghuaci
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 15 - qinghuaci
-  server: 185.114.72.31
-  port: 2053
   udp: true
   type: trojan
   password: humanity
@@ -153,7 +89,26 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 16 - qinghuaci
+- name: 🇫🇷 法国 (France) 10 - qinghuaci
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 11 - qinghuaci
+  server: 185.220.100.168
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 12 - qinghuaci
   server: 149.202.58.99
   port: 443
   udp: true
@@ -161,10 +116,13 @@ proxies:
   uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
   tls: true
   servername: bab-6.site
-  skip-cert-verify: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vws/
+    headers:
+      Host: bab-6.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -182,10 +140,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 10 - qinghuaci
   - 🇫🇷 法国 (France) 11 - qinghuaci
   - 🇫🇷 法国 (France) 12 - qinghuaci
-  - 🇫🇷 法国 (France) 13 - qinghuaci
-  - 🇫🇷 法国 (France) 14 - qinghuaci
-  - 🇫🇷 法国 (France) 15 - qinghuaci
-  - 🇫🇷 法国 (France) 16 - qinghuaci
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -203,9 +157,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 10 - qinghuaci
   - 🇫🇷 法国 (France) 11 - qinghuaci
   - 🇫🇷 法国 (France) 12 - qinghuaci
-  - 🇫🇷 法国 (France) 13 - qinghuaci
-  - 🇫🇷 法国 (France) 14 - qinghuaci
-  - 🇫🇷 法国 (France) 15 - qinghuaci
-  - 🇫🇷 法国 (France) 16 - qinghuaci
 rules:
 - MATCH,PROXIES
