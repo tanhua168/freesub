@@ -7,45 +7,41 @@
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - qinghuaci",
       "server": "192.145.31.5",
-      "server_port": 8443,
+      "server_port": 443,
       "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
-      "tls": {
-        "enabled": true,
-        "server_name": "neth9.lunariai.ru",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - qinghuaci",
-      "server": "84.32.217.120",
+      "server": "192.145.31.5",
+      "server_port": 8443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "neth9.lunariai.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - qinghuaci",
+      "server": "132.243.203.207",
       "server_port": 8443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
         "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/channels/act",
         "headers": {
           "Host": "cdn8848.776676.xyz"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        }
       }
     },
     {
@@ -54,7 +50,8 @@
       "outbounds": [
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01 - qinghuaci",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - qinghuaci"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - qinghuaci",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - qinghuaci"
       ]
     },
     {
@@ -62,7 +59,8 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01 - qinghuaci",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - qinghuaci"
+        "🇧🇬 保加利亚 (Bulgaria) 02 - qinghuaci",
+        "🇧🇬 保加利亚 (Bulgaria) 03 - qinghuaci"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
