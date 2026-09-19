@@ -4,29 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - qinghuaci",
-      "server": "93.190.8.19",
-      "server_port": 3090,
-      "uuid": "6687af93-eb39-47a3-9a73-0f79234ef507",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - qinghuaci",
+      "server": "82.47.186.18",
+      "server_port": 19290,
+      "method": "aes-128-gcm",
+      "password": "o2rw2hICwu1blrr_gZAl2Q"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - qinghuaci"
+        "🇫🇮 芬兰 (Finland) 01 - qinghuaci"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - qinghuaci"
+        "🇫🇮 芬兰 (Finland) 01 - qinghuaci"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

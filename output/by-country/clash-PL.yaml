@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - qinghuaci
   server: 217.30.10.44
-  port: 9041
+  port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: U6qnYRhfyDmn8sgn
+  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 02 - qinghuaci
   server: 217.30.10.44
   port: 9099
@@ -26,14 +26,7 @@ proxies:
   cipher: aes-256-cfb
   password: N7j3pdTYkKmsy8CR
 - name: 🇵🇱 波兰 (Poland) 04 - qinghuaci
-  server: 217.30.10.44
-  port: 9063
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 05 - qinghuaci
-  server: 185.223.57.10
+  server: 185.223.57.16
   port: 33743
   udp: true
   type: vless
@@ -46,13 +39,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 06 - qinghuaci
+- name: 🇵🇱 波兰 (Poland) 05 - qinghuaci
   server: 217.30.10.44
-  port: 9076
+  port: 9041
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
+  password: U6qnYRhfyDmn8sgn
+- name: 🇵🇱 波兰 (Poland) 06 - qinghuaci
+  server: admin.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 07 - qinghuaci
   server: 144.31.131.38
   port: 443
@@ -74,27 +75,40 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
 - name: 🇵🇱 波兰 (Poland) 09 - qinghuaci
-  server: admin.wwwinternetvideo.click
+  server: 83.168.111.58
   port: 443
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
+  type: vless
+  uuid: dabb9a19-03ab-4cdf-8963-d3c45eb0f80d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4h74KXbkBMYOhJkZabJNsf85cI91ytap_gkl56mzjTU
+  servername: soulful.host
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 10 - qinghuaci
-  server: 188.114.96.19
-  port: 80
+  server: 144.31.5.3
+  port: 443
   udp: true
-  type: vmess
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl4.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 11 - qinghuaci
+  server: 144.31.2.33
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl3.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 12 - qinghuaci
   server: 144.31.5.64
   port: 443
   udp: true
@@ -104,6 +118,7 @@ proxies:
   tls: true
   servername: pl6.moritech.net
   skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -120,6 +135,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 - qinghuaci
   - 🇵🇱 波兰 (Poland) 10 - qinghuaci
   - 🇵🇱 波兰 (Poland) 11 - qinghuaci
+  - 🇵🇱 波兰 (Poland) 12 - qinghuaci
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -136,5 +152,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 - qinghuaci
   - 🇵🇱 波兰 (Poland) 10 - qinghuaci
   - 🇵🇱 波兰 (Poland) 11 - qinghuaci
+  - 🇵🇱 波兰 (Poland) 12 - qinghuaci
 rules:
 - MATCH,PROXIES
