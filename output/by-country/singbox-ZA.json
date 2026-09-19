@@ -1,0 +1,66 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 01 - qinghuaci",
+      "server": "102.37.156.224",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "aduB9HGxQHjA2SBMRjkHX6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 02 - qinghuaci",
+      "server": "139.84.247.164",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "tfAcRikawhNoZAhu"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇿🇦 南非 (South Africa) 03 - qinghuaci",
+      "server": "server31.beheshtbaneh.com",
+      "server_port": 8880,
+      "uuid": "4154143c-bbba-47a4-9f79-c2ed087cbcc9",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "server31.beheshtbaneh.com"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇿🇦 南非 (South Africa) 01 - qinghuaci",
+        "🇿🇦 南非 (South Africa) 02 - qinghuaci",
+        "🇿🇦 南非 (South Africa) 03 - qinghuaci"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇿🇦 南非 (South Africa) 01 - qinghuaci",
+        "🇿🇦 南非 (South Africa) 02 - qinghuaci",
+        "🇿🇦 南非 (South Africa) 03 - qinghuaci"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

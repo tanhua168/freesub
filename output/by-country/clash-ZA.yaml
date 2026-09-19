@@ -1,0 +1,51 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇿🇦 南非 (South Africa) 01 - qinghuaci
+  server: 102.37.156.224
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+- name: 🇿🇦 南非 (South Africa) 02 - qinghuaci
+  server: 139.84.247.164
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: tfAcRikawhNoZAhu
+- name: 🇿🇦 南非 (South Africa) 03 - qinghuaci
+  server: server31.beheshtbaneh.com
+  port: 8880
+  udp: true
+  type: vmess
+  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: server31.beheshtbaneh.com
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇿🇦 南非 (South Africa) 01 - qinghuaci
+  - 🇿🇦 南非 (South Africa) 02 - qinghuaci
+  - 🇿🇦 南非 (South Africa) 03 - qinghuaci
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇿🇦 南非 (South Africa) 01 - qinghuaci
+  - 🇿🇦 南非 (South Africa) 02 - qinghuaci
+  - 🇿🇦 南非 (South Africa) 03 - qinghuaci
+rules:
+- MATCH,PROXIES

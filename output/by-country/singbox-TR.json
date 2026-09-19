@@ -6,9 +6,9 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - qinghuaci",
-      "server": "185.87.24.173",
-      "server_port": 2085,
-      "uuid": "3f654175-4f83-47ec-8ce2-f2bf0d160b27",
+      "server": "93.190.8.19",
+      "server_port": 3090,
+      "uuid": "6687af93-eb39-47a3-9a73-0f79234ef507",
       "transport": {
         "type": "grpc",
         "service_name": "vless"

@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - qinghuaci
-  server: 185.87.24.173
-  port: 2085
+  server: 93.190.8.19
+  port: 3090
   udp: true
   type: vless
-  uuid: 3f654175-4f83-47ec-8ce2-f2bf0d160b27
+  uuid: 6687af93-eb39-47a3-9a73-0f79234ef507
   network: grpc
   grpc-opts:
     grpc-service-name: vless
