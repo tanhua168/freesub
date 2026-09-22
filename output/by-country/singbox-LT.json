@@ -7,45 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
       "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
-      "server": "195.238.126.20",
       "server_port": 9002,
       "method": "aes-256-cfb",
       "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
-      "server": "84.32.151.226",
-      "server_port": 443,
-      "uuid": "10394279-283c-4ab8-8529-f1e0a4c61bc8",
-      "tls": {
-        "enabled": true,
-        "server_name": "preview-instance.cloudnativecontrol.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "C6nh6hqFTbtizgSH8vGmw2XUxsQAbAW3jPylpgGvfl4",
-          "short_id": "7c4b9a2e8d5f3c1b"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "moktana.net.v1.StreamService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - xiaohe",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
       "server": "84.32.215.94",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
@@ -70,9 +38,7 @@
       "outbounds": [
         "auto",
         "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 04 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe"
       ]
     },
     {
@@ -80,9 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 03 - xiaohe",
-        "🇱🇹 立陶宛 (Lithuania) 04 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
