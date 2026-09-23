@@ -6,32 +6,28 @@ log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
   server: 188.114.97.6
-  port: 443
+  port: 8080
   udp: true
   type: vless
-  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
-  tls: true
-  servername: ezaccess-project-f62c30.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: ezaccess-project-f62c30.pages.dev
+      Host: 057.electrocellco-cf-057.workers.dev
 - name: 🇮🇶 IQ 02 - xiaohe
-  server: 193.56.135.233
-  port: 9543
+  server: 193.8.215.96
+  port: 9443
   udp: true
   type: vless
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-  flow: xtls-rprx-vision
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
   tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcde
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
+  servername: hub-de-03.hanvpn.cc
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: de03-grpc-8e47a
 proxy-groups:
 - name: PROXIES
   type: select
