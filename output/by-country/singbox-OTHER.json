@@ -6,14 +6,23 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "bd9ff08b-d042-3650-48e4-c4b400000000",
+      "server": "104.18.15.103",
+      "server_port": 443,
+      "uuid": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
+      "tls": {
+        "enabled": true,
+        "server_name": "server9.9966338.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
+        "path": "/imnotarealherox",
         "headers": {
-          "Host": "netlivpn2950.bbxff.workers.dev"
+          "Host": "server9.9966338.xyz"
         }
       }
     },
