@@ -20,14 +20,6 @@ proxies:
   password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
   sni: hk01.kfc-520.com
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇸🇬 新加坡 (Singapore) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
