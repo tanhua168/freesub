@@ -30,26 +30,21 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "port2.axiomed.ir",
-      "server_port": 443,
-      "uuid": "b825ccd6-f90c-4273-afe1-7f85b436a4a2",
+      "server": "195.133.66.229",
+      "server_port": 8443,
+      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ejtl1lb-mlyxnz0ko5iz618motr0msa.fornewiran-1011.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "nlll.gaz-service.shop",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/6ayyVzPLRWVROzJKD82qZxn?ed=2560",
-        "headers": {
-          "Host": "ejtl1lb-mlyxnz0ko5iz618motr0msa.fornewiran-1011.workers.dev"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng",
+          "short_id": "b415b8d7a6106ace"
         }
       }
     },
