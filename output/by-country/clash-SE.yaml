@@ -19,35 +19,35 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: 51.20.143.248
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: 51.20.96.231
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
-  server: 13.60.213.145
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
   server: 51.20.86.152
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
+  server: 13.60.213.145
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaohe
   server: 13.49.76.55
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: 51.20.143.248
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  server: 51.20.122.188
   port: 443
   udp: true
   type: ss
@@ -79,7 +79,7 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 10 - xiaohe
   server: 62.60.159.81
   port: 2053
@@ -96,13 +96,28 @@ proxies:
   grpc-opts:
     grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 11 - xiaohe
-  server: 13.62.228.76
+  server: 2.27.14.218
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  tls: true
+  servername: stf7697.rumedia-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: stf7697.rumedia-cdn.com
+- name: 🇸🇪 瑞典 (Sweden) 12 - xiaohe
+  server: 51.20.96.231
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 12 - xiaohe
+- name: 🇸🇪 瑞典 (Sweden) 13 - xiaohe
   server: sw-01.vacvps.com
   port: 443
   udp: true
@@ -131,6 +146,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 10 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 11 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 12 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -148,5 +164,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 10 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 11 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 12 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 13 - xiaohe
 rules:
 - MATCH,PROXIES
