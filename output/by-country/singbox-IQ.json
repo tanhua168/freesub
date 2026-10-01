@@ -1,0 +1,73 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "188.114.96.3",
+      "server_port": 80,
+      "uuid": "7201b2cd-0675-4c1a-9c76-07ca14ffcf08",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiMm40VHVzc2JqIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+        "headers": {
+          "Host": "6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 02 - xiaohe",
+      "server": "104.21.86.79",
+      "server_port": 443,
+      "uuid": "23e34376-aa47-4c8d-97ea-02915e01fcca",
+      "tls": {
+        "enabled": true,
+        "server_name": "j3bx1s9mk2sylw66yj-hsk.tjsjrkk8gbhts0q5-0os.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/GibGgsdlL8yA5jaUVLzA1Z?ed=2560",
+        "headers": {
+          "Host": "j3bx1s9mk2sylw66yj-hsk.tjsjrkk8gbhts0q5-0os.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇶 IQ 01 - xiaohe",
+        "🇮🇶 IQ 02 - xiaohe"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇶 IQ 01 - xiaohe",
+        "🇮🇶 IQ 02 - xiaohe"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
