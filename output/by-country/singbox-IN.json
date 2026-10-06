@@ -45,11 +45,24 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇳 印度 (India) 03 - xiaohe",
-      "server": "103.194.228.102",
-      "server_port": 4443,
-      "uuid": "f247f7e4-04bb-48a5-828d-b8e75ec4c3af"
+      "server": "211.20.156.191",
+      "server_port": 28163,
+      "password": "i99Cef",
+      "tls": {
+        "enabled": true,
+        "server_name": "ctldl.windowsupdate.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇳 印度 (India) 04 - xiaohe",
+      "server": "45.149.114.171",
+      "server_port": 777,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
     },
     {
       "type": "selector",
@@ -58,7 +71,8 @@
         "auto",
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
-        "🇮🇳 印度 (India) 03 - xiaohe"
+        "🇮🇳 印度 (India) 03 - xiaohe",
+        "🇮🇳 印度 (India) 04 - xiaohe"
       ]
     },
     {
@@ -67,7 +81,8 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
-        "🇮🇳 印度 (India) 03 - xiaohe"
+        "🇮🇳 印度 (India) 03 - xiaohe",
+        "🇮🇳 印度 (India) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
