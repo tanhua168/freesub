@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
-  server: 104.21.50.89
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: ade.axiomed.ir
   port: 443
   udp: true
   type: vless
-  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
+  uuid: 77702cd2-6a11-40f4-a817-1efeae6f6889
   tls: true
-  servername: geo.shkola112.site
+  servername: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /api-vless
+    path: /vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560
     headers:
-      Host: geo.shkola112.site
+      Host: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe
+  - 🇮🇶 IQ 01 - xiaohe
 rules:
 - MATCH,PROXIES
