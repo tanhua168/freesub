@@ -5,20 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: ade.axiomed.ir
-  port: 443
+  server: arcturus.yokkastars.com
+  port: 40443
   udp: true
   type: vless
-  uuid: 77702cd2-6a11-40f4-a817-1efeae6f6889
+  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+  flow: xtls-rprx-vision
   tls: true
-  servername: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/Nmf5YfPITFhUjeHE8KfDU5T8H?ed=2560
-    headers:
-      Host: t4sy714oeyu0ntwavv62g6ua9o.ade-1001.workers.dev
+  reality-opts:
+    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
+    short-id: db46e2946fc466fd
+  servername: deepl.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
